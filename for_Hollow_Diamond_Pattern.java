@@ -5,6 +5,7 @@ import java.util.*;
 
 class for_Hollow_Diamond_Pattern {
     public static void main(String[] args) {
+        System.out.println("Enter the width of the diamond: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
