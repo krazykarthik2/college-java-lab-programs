@@ -1,0 +1,25 @@
+
+//coin flip random if else program
+import java.util.*;
+import java.lang.*;
+
+class Coinflip {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Random rand = new Random();
+        int x = rand.nextInt(2);
+        System.out.println("Enter 0 for tails or 1 for heads:");
+        int y = scan.nextInt();
+        if ((y > 1 || y < 0)) {
+            System.out.println("invalid input");
+            System.exit(0);
+        }
+        String[] result = { "tails", "heads" };
+        System.out.println("coin flip resulted in :" + result[x]);
+        if (x == y) {
+            System.out.println("you win");
+        } else {
+            System.out.println("you lose");
+        }
+    }
+}
